@@ -4,7 +4,7 @@
 PlayerSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 28
-  productGUID: d113a640b1ba02349b4a7716ebe1c872
+  productGUID: 9107fff90823d5248a2090f0f6363774
   AndroidProfiler: 0
   AndroidFilterTouchesWhenObscured: 0
   AndroidEnableSustainedPerformanceMode: 0
@@ -13,7 +13,7 @@ PlayerSettings:
   useOnDemandResources: 0
   accelerometerFrequency: 60
   companyName: DefaultCompany
-  productName: 12 cs project 1
+  productName: coin_collector_project
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.13725491, g: 0.12156863, b: 0.1254902, a: 1}
@@ -609,14 +609,14 @@ PlayerSettings:
   editorAssembliesCompatibilityLevel: 1
   m_RenderingPath: 1
   m_MobileRenderingPath: 1
-  metroPackageName: 12 cs project 1
+  metroPackageName: coin_collector_project
   metroPackageVersion: 
   metroCertificatePath: 
   metroCertificatePassword: 
   metroCertificateSubject: 
   metroCertificateIssuer: 
   metroCertificateNotAfter: 0000000000000000
-  metroApplicationDescription: 12 cs project 1
+  metroApplicationDescription: coin_collector_project
   wsaImages: {}
   metroTileShortName: 
   metroTileShowName: 0
@@ -685,13 +685,13 @@ PlayerSettings:
   qnxGraphicConfPath: 
   apiCompatibilityLevel: 6
   captureStartupLogs: {}
-  activeInputHandler: 1
+  activeInputHandler: 2
   windowsGamepadBackendHint: 0
-  cloudProjectId: dffb0f01-41bd-4fd0-9f4a-24c5253eb98f
+  cloudProjectId: 01ef5573-9ada-48fa-8b66-76548235ee0f
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
-  projectName: 12 cs project 1
-  organizationId: sophienuy1mtuvisuv
+  projectName: coin_collector_project
+  organizationId: annaxxkonsta45mtueee5a
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0
   hmiLoadingImage: {fileID: 0}
