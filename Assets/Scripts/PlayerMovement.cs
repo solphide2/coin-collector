@@ -15,7 +15,7 @@ public class PlayerMovement : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
-        // makes rigidbody + animator attached to the player!!
+        // makes rigidbody + animator attached to the player!
     }
 
     void Update()
@@ -24,30 +24,42 @@ public class PlayerMovement : MonoBehaviour
 
         if (Input.GetKey(KeyCode.UpArrow))
         {
-            movement.y = 1;
+            movement.y = 1; // to move up
+            animator.SetInteger("Direction", 1); // to face up
         }
+
+        //"direction" is the name of the parameter in the animator, and the numbers are the values that correspond to each direction
+        //the animator will then play the corresponding animation based on the direction value
+
+
 
         if (Input.GetKey(KeyCode.DownArrow))
         {
-            movement.y = -1;
+            movement.y = -1; // to move down
+            animator.SetInteger("Direction", 2); // to face down
         }
+
 
         if (Input.GetKey(KeyCode.LeftArrow))
         {
-            movement.x = -1;
+            movement.x = -1; //move left 
+            animator.SetInteger("Direction", 3);
         }
 
         if (Input.GetKey(KeyCode.RightArrow))
         {
-            movement.x = 1;
+            movement.x = 1;//move right
+            animator.SetInteger("Direction", 4);
         }
 
-        //moves player up, down, left, right!
+        //basically each number (1,2,3,4) corresponds to a direction in the animator so that depending on which key you press, the bunny will face that direction
+
 
         movement = movement.normalized; //if you press 2 keys, you can also go diagonally! this keeps diagonal movement from going faster
 
         animator.SetFloat("Speed", movement.sqrMagnitude);
-        //tells the Animator whether the bunny is moving or not by setting speed value
+        //"speed" is another name of the parameter in the animator
+        //the animator will play the corresponding animation based on the speed value (e.g.if the speed is 0, the bunny will be idle, and if the speed is > than 0, the bunny will move)
     }
 
     void FixedUpdate()
