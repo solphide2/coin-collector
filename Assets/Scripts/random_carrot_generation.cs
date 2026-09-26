@@ -14,7 +14,7 @@ public class random_carrot_generation : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-       UpdateCounter();
+        UpdateCounter();
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -25,22 +25,25 @@ public class random_carrot_generation : MonoBehaviour
             ChangePosition();
             counter++;
             UpdateCounter();
-            
         }
     }
 
-    void CarrotCollector() {
+    // Updates counter and keeps track so carrots will disappear after counter reaches 5
+    void CarrotCollector()
+    {
         counter++;
         UpdateCounter();
-        if (counter==5) {
+        if (counter == 5)
+        {
             gameObject.SetActive(false);
         }
-        else {
+        else
+        {
             ChangePosition();
         }
-        
     }
 
+    // Randomly respawns carrots when called by CarrotCollector function
     void ChangePosition()
     {
         float randomx = Random.Range(minX, maxX);
@@ -48,27 +51,24 @@ public class random_carrot_generation : MonoBehaviour
         Debug.Log("Generated Math -> X: " + randomx + " | Y: " + randomy);
         Debug.Log(counter);
         transform.position = new Vector3(randomx, randomy, transform.position.z);
-        
     }
 
+    // Updates counter text
     void UpdateCounter()
     {
-        if (scoreText!=null){
+        if (scoreText != null)
+        {
             scoreText.text = "x" + counter;
         }
-
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space)) {
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
             Debug.Log("change");
             CarrotCollector();
         }
-        
-        }
-         
-        
     }
-
+}
