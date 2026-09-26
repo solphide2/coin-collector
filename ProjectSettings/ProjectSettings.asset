@@ -687,11 +687,11 @@ PlayerSettings:
   captureStartupLogs: {}
   activeInputHandler: 2
   windowsGamepadBackendHint: 0
-  cloudProjectId: dffb0f01-41bd-4fd0-9f4a-24c5253eb98f
+  cloudProjectId: 01ef5573-9ada-48fa-8b66-76548235ee0f
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
-  projectName: 12 cs project 1
-  organizationId: sophienuy1mtuvisuv
+  projectName: coin_collector_project
+  organizationId: annaxxkonsta45mtueee5a
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0
   hmiLoadingImage: {fileID: 0}
