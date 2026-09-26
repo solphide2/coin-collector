@@ -22,9 +22,7 @@ public class random_carrot_generation : MonoBehaviour
         // Check if the object touching the carrot is tagged "Player"
         if (other.CompareTag("Player"))
         {
-            ChangePosition();
-            counter++;
-            UpdateCounter();
+            CarrotCollector();
         }
     }
 
@@ -65,10 +63,6 @@ public class random_carrot_generation : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            Debug.Log("change");
-            CarrotCollector();
-        }
+        
     }
 }
