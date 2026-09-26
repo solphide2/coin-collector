@@ -11,6 +11,8 @@ public class random_carrot_generation : MonoBehaviour
 
     public TextMeshProUGUI scoreText;
 
+    public GameTimer gameTimer; // Reference to the GameTimer script
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -33,6 +35,10 @@ public class random_carrot_generation : MonoBehaviour
         UpdateCounter();
         if (counter == 5)
         {
+            if (gameTimer != null)
+            {
+                gameTimer.StopTimerAndWin();
+            }
             gameObject.SetActive(false);
         }
         else
