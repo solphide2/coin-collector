@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 91c18ddd07666c4488d42d8701d8840f
+guid: 9128135cfa428874b8956ad42325a08b
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8123002345061787305
-    second: grassywithbricks_0
+      213: 6545904345626749603
+    second: carrot 1_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -56,9 +56,7 @@ TextureImporter:
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
   alphaIsTransparency: 1
-  spriteTessellationMethod: 0
   spriteTessellationDetail: -1
-  spriteGeometrySubdivision: -1
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
@@ -98,30 +96,17 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: grassywithbricks_0
+      name: carrot 1_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 3834
-        height: 2281
+        x: 70
+        y: 29
+        width: 166
+        height: 223
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -130,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9a6a2176893bab070800000000000000
-      internalID: 8123002345061787305
+      spriteID: 3aaa4c61259b7da50800000000000000
+      internalID: 6545904345626749603
       vertices: []
       indices: 
       edges: []
@@ -150,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      grassywithbricks_0: 8123002345061787305
+      carrot 1_0: 6545904345626749603
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
