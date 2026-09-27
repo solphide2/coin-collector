@@ -240,7 +240,7 @@ MonoBehaviour:
   maxY: 4
   counter: 0
   scoreText: {fileID: 1418894229}
-  gameTimer: {fileID: 0}
+  gameTimer: {fileID: 14645150}
 --- !u!212 &91243961
 SpriteRenderer:
   serializedVersion: 2
