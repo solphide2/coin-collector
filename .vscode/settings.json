@@ -67,5 +67,5 @@
         "*.sln": "*.csproj",
         "*.slnx": "*.csproj"
     },
-    "dotnet.defaultSolution": "coin-collector.slnx"
+    "dotnet.defaultSolution": "12 cs project 1.slnx"
 }
