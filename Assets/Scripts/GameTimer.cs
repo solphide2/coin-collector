@@ -1,5 +1,6 @@
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class GameTimer : MonoBehaviour
 {
@@ -48,15 +49,14 @@ public class GameTimer : MonoBehaviour
             if (timerText != null)
             {
                 float finalTime = 20f - timeRemaining;
-                timerText.text = "You win! Time completed: " + finalTime.ToString("F2") + "s";
+                GameData.PlayerWon = true;
+                GameData.FinalTime = finalTime;
             }
         }
         else
         {
-            if (timerText != null)
-            {
-                timerText.text = "You lose!";
-            }
+            GameData.PlayerWon = false;
+            GameData.FinalTime = 0f;
             
             random_carrot_generation carrot = Object.FindFirstObjectByType<random_carrot_generation>();
             if (carrot != null)
@@ -64,6 +64,7 @@ public class GameTimer : MonoBehaviour
                 carrot.gameObject.SetActive(false);
             }
         }
+        SceneManager.LoadScene("EndMenu");
     } 
 
     private void UpdateTimerText(string prefix)
