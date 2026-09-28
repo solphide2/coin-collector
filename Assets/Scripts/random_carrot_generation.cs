@@ -33,7 +33,7 @@ public class random_carrot_generation : MonoBehaviour
     {
         counter++;
         UpdateCounter();
-        if (counter == 15)
+        if (counter == 10)
         {
             if (gameTimer != null)
             {
