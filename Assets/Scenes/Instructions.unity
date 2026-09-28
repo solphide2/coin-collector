@@ -733,7 +733,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Collect all 5 carrots within the 20 second countdown by using the arrow
+  m_text: Collect all 10 carrots within the 20 second countdown by using the arrow
     keys to move the bunny!
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
