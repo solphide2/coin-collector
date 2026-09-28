@@ -7,7 +7,7 @@ public class MainMenuController : MonoBehaviour
     public void PlayGame()
     {
         Debug.Log("Play Game");
-        SceneManager.LoadScene("Nathan_GameScene");
+        SceneManager.LoadScene("SampleScene");
         
     }
 
